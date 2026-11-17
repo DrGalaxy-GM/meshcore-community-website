@@ -13,7 +13,7 @@ header{background:white;padding:18px 6%;display:flex;justify-content:space-betwe
 .logo{font-size:24px;font-weight:800;color:var(--teal)}
 nav a{margin-right:15px;color:var(--dark);text-decoration:none;font-weight:bold}
 .hero{background:linear-gradient(125deg,#087e9a,#159f91);color:white;padding:75px 7%;text-align:center}
-.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.15;max-width:850px;margin:0 auto 20px}
+.hero-layout{max-width:1180px;margin:auto;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,0.8fr);align-items:center;gap:30px}.hero-copy{text-align:left}.hero-copy h1,.hero-copy p{margin-left:0;margin-right:0}.hero-graphic{width:100%;max-width:350px;justify-self:center;filter:drop-shadow(0 12px 18px #00394b55)}@media(max-width:720px){.hero-layout{grid-template-columns:1fr}.hero-copy{text-align:center}.hero-copy h1,.hero-copy p{margin-left:auto;margin-right:auto}.hero-graphic{max-width:225px}.hero{padding:45px 6%}}.hero h1{font-size:clamp(32px,5vw,56px);line-height:1.15;max-width:850px;margin:0 auto 20px}
 .hero p{font-size:20px;max-width:740px;margin:0 auto 26px}
 .button{display:inline-block;background:var(--gold);color:#193b4a;padding:13px 23px;border-radius:28px;font-weight:bold;text-decoration:none;margin:6px}
 section{max-width:1100px;margin:auto;padding:55px 22px}
@@ -41,12 +41,32 @@ footer a{color:#ffdb83}
 </nav>
 </header>
 
-<div class="hero">
+<div class="hero"><div class="hero-layout"><div class="hero-copy">
 <h1>Found a Small Box With an Antenna?</h1>
 <p>It may be part of MeshCore — a community-supported radio network that helps people stay connected even when cell service and internet connections are unavailable.</p>
 <a class="button" href="#found">What Is This Device?</a>
 <a class="button" href="#purpose">How Does MeshCore Help?</a>
-</div>
+</div><svg class="hero-graphic" viewBox="0 0 350 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a solar-powered MeshCore radio repeater with an antenna and wireless signal waves">
+<defs><linearGradient id="solar" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#225d9c"/><stop offset="1" stop-color="#092c57"/></linearGradient></defs>
+<circle cx="177" cy="174" r="148" fill="#ffffff" opacity=".12"/><circle cx="177" cy="174" r="116" fill="#ffffff" opacity=".09"/>
+<g fill="none" stroke="#e8fcff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M201 365V79"/><path d="M201 79V45"/><circle cx="201" cy="40" r="5" fill="#ffd66b"/>
+<path d="M177 64q24-23 48 0M163 51q38-38 76 0" stroke="#ffd66b"/>
+<path d="M191 147h22M191 285h22"/>
+</g>
+<g transform="translate(34 111) rotate(-9 95 63)" stroke="#eafaff" stroke-width="5" stroke-linejoin="round">
+<rect x="0" y="0" width="166" height="115" rx="10" fill="url(#solar)"/>
+<path d="M41 3v109M83 3v109M125 3v109M3 38h160M3 76h160" stroke="#78d4f1" stroke-width="2.5"/>
+</g>
+<g stroke="#eafaff" stroke-width="5" stroke-linejoin="round">
+<rect x="203" y="153" width="106" height="151" rx="18" fill="#d9f1fa"/>
+<rect x="216" y="168" width="80" height="122" rx="11" fill="#ffffff" stroke="#177d9a" stroke-width="3"/>
+<circle cx="256" cy="195" r="10" fill="#159f91" stroke="none"/>
+<path d="M234 224h44M234 237h44M234 250h28" stroke="#177d9a" stroke-width="4" stroke-linecap="round"/>
+<path d="M202 172h-13v19h13M202 266h-13v19h13"/>
+</g>
+<path d="M175 367h55" stroke="#eafaff" stroke-width="8" stroke-linecap="round"/>
+</svg></div></div>
 
 <section id="found">
 <h2>What Is This Device I Found?</h2>
